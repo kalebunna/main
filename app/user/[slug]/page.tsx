@@ -4,7 +4,7 @@ import ListProject from "./listProject";
 
 async function fetchData(params: string) {
   const res = await fetch(`https://api.github.com/users/${params}`);
-  await new Promise((r) => setTimeout(r, 5000));
+  await new Promise((r) => setTimeout(r, 2000));
   return res.json();
 }
 export default async function userSlug({
